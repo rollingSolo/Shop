@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+   
+}
+.flex {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex .container{
+  
+    display: inline-block;
+    margin: 40px 20px;
+}
+.container {
+    
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+
+.buy {
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    height: 48px;
+    text-align: center;
+    background: aqua;
+    line-height: 48px;
+    color: #fff;
+    border: 2px solid aqua;
+}
+
+.buy:hover {
+    height: 48px;
+    border: 2px solid aqua;
+    background: #fff;
+    color: aqua;
+    transition: all .1s ease-in-out 0s;
+}
+
