@@ -6,6 +6,14 @@
 	<title>Shop</title>
 </head>
 <body>
+	<div class="header">
+		<ul class="nav">
+			<li><a href="#">Home</a></li>
+			<li><a href="register.php">Sign Up</a></li>
+			<li><a href="#">Sign In</a></li>
+		</ul>
+	</div>
+		
 	<div class="flex">
 	<?php
 		$host = "localhost";
