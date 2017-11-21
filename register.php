@@ -8,9 +8,11 @@
     <title>Register</title>
 </head>
 <body>
-    <form class="form" action="#" method="POST">
+    <form class="form" action="reg.php" method="POST">
+        
         <input type="text" name="username" placeholder="username" required>
         <input type="text" name="password" placeholder="password" required>
+        <input type="email" name="email" placeholder="email" required>
         <input type="submit" name="submit" value="Register">
     </form>
 </body>

@@ -10,23 +10,13 @@
 		<ul class="nav">
 			<li><a href="#">Home</a></li>
 			<li><a href="register.php">Sign Up</a></li>
-			<li><a href="#">Sign In</a></li>
+			<li><a href="signin.php">Sign In</a></li>
 		</ul>
 	</div>
 		
 	<div class="flex">
 	<?php
-		$host = "localhost";
-		$user = "postgetman";
-		$pass = "999333";
-		$db = "shop";
-	
-		$connection = mysqli_connect($host,$user,$pass,$db);
-	
-		if(!$connection){
-			die("Connection failed: " . mysql_error());
-		}
-
+		require('connect.php');
 		$query = "SELECT * FROM `products`";
 
 		$result = mysqli_query($connection,$query);
@@ -39,10 +29,7 @@
 				<a href="#" class="buy">Buy</a>	
 			</div>
 				
-			
-		<?php } ?>
-
-		<?php mysqli_close($connection); ?>
+	<?php } ?>
 	</div>
 	
 
